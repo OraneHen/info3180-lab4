@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/files.css') }}" />
+{% include 'flash_messages.html' %}
+
+<div class="img_container">
+    {% for file in files %}
+    <div class="crop">
+        <img class="img" src='{{file}}' alt="no picture" />
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+.img_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img{
+    margin: 10px;
+}
+
+.crop {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
